@@ -10,11 +10,11 @@ namespace CodeFirstDB.Data
         {
 
         }
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        /*protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=CodeFirstdb;Trusted_Connection=True;MultipleActiveResultSets=true");
-        }
+            optionsBuilder.UseSqlServer("DefaultConnection");
+        }*/
 
         public DbSet<WeatherForecast> Forecasts { get; set; }
 
